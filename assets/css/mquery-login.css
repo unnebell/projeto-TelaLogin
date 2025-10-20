@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --fontpoppins: 'Poppins', sans-serif;
+    --cor00: #8d8d8da6;
+    --cor01: #262626;
+    --cor02: #8d7575;
+    --cor03: white;
+    --cor04: #0000007a;
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    section {
+        width: 650px;
+        height: 400px;
+
+        transition: width .4s, height .4s;
+        transition-timing-function: ease;
+    }
+
+    #form {
+        float: right;
+        width: 350px;
+    }
+
+    #img {
+        float: left;
+        width: 280px;
+        height: 400px;
+    }
+
+    #verSenha {
+        color: var(--cor02);
+        top: 46%;
+        left: 92%;
+    }
+
+    #form p > a {
+        text-decoration: none;
+    }
+
+    #form p > a:hover {
+        text-decoration: underline;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 48;
+        position: absolute;
+        top: 29%;
+        left: 91%;
+        color: var(--cor04);
+      }
+
+      .material-symbols-rounded {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 48;
+        position: absolute;
+        top: 62%;
+        left: 78%;
+        transform: translate(0, -3px);
+        color: var(--cor02);
+      }
+
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background: url(../images/bgblur.png) center no-repeat;
+        background-size: cover;
+
+        animation: bg 20s ease infinite;
+    }
+    
+    section {
+        width: 800px;
+        background-color: var(--cor00);
+        
+        transition: width .4s, height .4s;
+        transition-timing-function: ease;
+    }
+
+    #form {
+        float: left;
+        width: 450px;
+    }
+
+    #form h1 {
+        font-size: 2.5em;
+    }
+
+    #form input {
+        width: 400px;
+        padding: 15px;
+    }
+
+    #img {
+        float: right;
+        width: 350px;
+        height: 100%;
+    }
+
+    #verSenha {
+        color: var(--cor02);
+        top: 42%;
+        left: 48%;
+    }
+
+    #btn {
+        width: 200px;
+        padding: 20px;
+    }
+
+    #form p {
+        font-size: 1.1em;
+    }
+
+    #form p > a {
+        text-decoration: none;
+    }
+
+    #form p > a:hover {
+        text-decoration: underline;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 48;
+        position: absolute;
+        top: 26%;
+        left: 47%;
+        color: var(--cor04);
+        transform: translate(5px);
+      }
+
+      .material-symbols-rounded {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 48;
+        position: absolute;
+        top: 58%;
+        left: 32%;
+        transform: translate(0, -3px);
+        color: var(--cor02);
+      }
+
+    @keyframes bg {
+        0% {
+            background-position: top;
+        }
+        25% {
+            background-position: center;
+        }
+        50% {
+            background-position: bottom;
+        }
+        75% {
+            background-position: center;
+        }
+        100% {
+            background-position: top;
+        }
+    }
+}

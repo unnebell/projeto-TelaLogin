@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --fontpoppins: 'Poppins', sans-serif;
+    --cor00: #8d8d8da6;
+    --cor01: #262626;
+    --cor02: #8d7575;
+    --cor03: white;
+}
+
+/*telas médias*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background: url(../images/bgblur.png) center no-repeat;
+        background-size: cover;
+    }
+    
+    section {
+        width: 740px;
+        height: 350px;
+
+        transition: width .4s, height .4s;
+        transition-timing-function: ease;
+    }
+
+    #form {
+        float: right;
+        width: 400px;
+    }
+
+    #form h1 {
+        padding: 7px;
+        font-size: 1.7em;
+    }
+
+    #form input {
+        padding: 10px;
+        margin: 5px;
+        font-size: 0.75em;
+    }
+
+    button#btn {
+        padding: 5px;
+        font-size: 1em;
+    }
+
+    #btn:hover {
+        transition: ease-in .2;
+    }
+
+    #img {
+        background: url(../images/bg.jpg) left no-repeat;
+        background-size: cover;
+        width: 340px;
+        height: 100%;
+        float: left;
+    }
+
+    
+    #verSenha {
+        position: absolute;
+        top: 55%;
+        left: 85%;
+    }
+
+    #verConfirmSenha {
+        position: absolute;
+        top: 69%;
+        left: 85%;
+    }
+
+    #form p, a {
+        font-size: .92em;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 48;
+        position: absolute;
+        top: 26%;
+        left: 84%;
+        color: var(--cor02);
+      }
+
+      .account_circle {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 48;
+        position: absolute;
+        top: 40%;
+        left: 84%;
+        color: var(--cor02);
+      }
+
+}
+
+/*telas grandes*/
+@media screen and (min-width: 992px) {
+    body {
+        background: url(../images/bgblur.png) center no-repeat;
+        background-size: cover;
+
+        animation: bg 20s ease infinite;
+    }
+    
+    section {
+        width: 900px;
+        transition: width .4s, height .4s;
+        transition-timing-function: ease;
+    }
+
+    #form {
+        float: left;
+        width: 400px;
+    }
+
+    #img {
+        background: url(../images/bg.jpg) center no-repeat;
+        background-size: cover;
+        float: right;
+        width: 500px;
+        height: 100%;
+    }
+
+    #verSenha {
+        position: absolute;
+        top: 53%;
+        left: 84%;
+    }
+
+    #verConfirmSenha {
+        position: absolute;
+        top: 68%;
+        left: 84%;
+    }
+
+    #form a{
+        text-decoration: none;
+    }
+
+    #form a:hover{
+        text-decoration: underline;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 48;
+        position: absolute;
+        top: 24%;
+        left: 83%;
+        color: var(--cor02);
+      }
+
+      .account_circle {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 48;
+        position: absolute;
+        top: 38%;
+        left: 83%;
+        color: var(--cor02);
+      }
+
+    @keyframes bg {
+        0%{
+            background-position: top;
+        }
+        25% {
+            background-position: center;
+        }
+        50%{
+            background-position: bottom;
+        }
+        75%{
+            background-position: center;
+        }
+        100%{
+            background-position: top;
+        }
+    }
+}
